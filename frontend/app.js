@@ -82,7 +82,7 @@ async function fetchJSON(url) {
 // Load per-game CSS
 function setGameStyle(gameCode) {
   const link = document.getElementById("game-style");
-  if (link) link.href = `/static/${gameCode}.css`;
+  if (link) link.href = `/static/renderers/${gameCode}.css`;
 }
 
 // Trigger winner flash animation
@@ -114,6 +114,8 @@ function highlightWinningLine(line) {
   if (r && r.highlightWinningLine) r.highlightWinningLine(boardEl, line);
 }
 
+
+
 // =======================================================
 //  Games & Bots
 // =======================================================
@@ -126,7 +128,15 @@ async function loadGamesAndBots() {
     opt.textContent = `${g.name} — ${g.description}`;
     gameSelect.appendChild(opt);
   }
-  currentGame = gameSelect.value;
+
+  // ✅ força Tic Tac Toe como padrão se existir
+  if (games.some(g => g.code === "tic_tac_toe")) {
+    gameSelect.value = "tic_tac_toe";
+    currentGame = "tic_tac_toe";
+  } else {
+    currentGame = gameSelect.value;
+  }
+
   setGameStyle(currentGame);
   await loadBots();
 }

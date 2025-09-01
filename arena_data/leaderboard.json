@@ -8,41 +8,41 @@
     },
     "corner_bot": {
       "wins": 1,
-      "losses": 4,
-      "draws": 0,
-      "games": 5
+      "losses": 5,
+      "draws": 3,
+      "games": 9
     },
     "perfect_bot": {
-      "wins": 5,
+      "wins": 10,
       "losses": 0,
       "draws": 6,
-      "games": 11
+      "games": 16
     },
     "random_ttt": {
-      "wins": 9,
-      "losses": 10,
-      "draws": 7,
-      "games": 26
+      "wins": 12,
+      "losses": 17,
+      "draws": 10,
+      "games": 39
     }
   },
   "eleven_sticks": {
     "random_stick": {
-      "wins": 7,
-      "losses": 7,
+      "wins": 8,
+      "losses": 10,
       "draws": 0,
-      "games": 14
+      "games": 18
     },
     "greedy_stick_bot": {
-      "wins": 1,
+      "wins": 2,
       "losses": 3,
       "draws": 0,
-      "games": 4
+      "games": 5
     },
     "perfect_stick_bot": {
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "draws": 0,
-      "games": 2
+      "games": 3
     }
   }
 }

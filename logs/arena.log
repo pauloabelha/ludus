@@ -1165,3 +1165,464 @@
 2025-08-27 18:23:12.499 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
 2025-08-27 18:23:12.507 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
 2025-08-27 18:23:12.507 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 17:48:17.762 | INFO     | arena.logging_config:<module>:33 - Logger initialized
+2025-09-01 17:48:17.762 | INFO     | __main__:main:5 - Starting Arena with loguru logging
+2025-09-01 17:48:22.242 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 17:48:22.520 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 17:48:22.520 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 17:48:22.521 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 17:48:22.521 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 17:48:22.521 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 17:48:22.522 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 17:48:22.522 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 17:48:22.522 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 17:48:22.526 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 17:48:22.526 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 17:48:22.526 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:48:22.526 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 17:48:22.527 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 17:48:22.527 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 17:48:22.527 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:48:22.530 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 17:48:22.530 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 17:48:27.417 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | random_ttt (X) vs random_ttt (O)
+2025-09-01 17:48:27.417 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 17:48:27.418 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 17:48:27.418 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:48:27.418 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 17:48:27.418 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 17:48:27.418 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 17:48:27.420 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=O
+2025-09-01 17:48:27.421 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 17:48:27.421 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=win, stats={'wins': 10, 'losses': 10, 'draws': 7, 'games': 27}
+2025-09-01 17:48:27.424 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 17:48:27.424 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 10, 'losses': 11, 'draws': 7, 'games': 28}
+2025-09-01 17:48:27.425 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_174827_425410.json
+2025-09-01 17:48:27.425 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=random_ttt vs random_ttt → winner=O
+2025-09-01 17:48:27.426 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_174827_425410.json
+2025-09-01 17:48:39.733 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 17:48:39.748 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 17:48:39.749 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 17:48:39.749 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 17:48:39.749 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 17:48:39.749 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 17:48:39.750 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 17:48:39.750 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 17:48:39.750 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 17:48:39.758 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 17:48:39.758 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 17:48:39.758 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:48:39.758 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 17:48:39.759 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 17:48:39.759 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 17:48:39.759 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:48:39.763 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 17:48:39.763 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 17:59:17.592 | INFO     | arena.logging_config:<module>:33 - Logger initialized
+2025-09-01 17:59:17.592 | INFO     | __main__:main:5 - Starting Arena with loguru logging
+2025-09-01 17:59:22.475 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 17:59:22.504 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 17:59:22.504 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 17:59:22.504 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 17:59:22.504 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 17:59:22.504 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 17:59:22.505 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 17:59:22.505 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 17:59:22.505 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 17:59:22.510 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 17:59:22.510 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 17:59:22.510 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:59:22.511 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 17:59:22.511 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 17:59:22.511 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 17:59:22.511 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:59:22.515 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 17:59:22.515 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 17:59:24.386 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | random_ttt (X) vs random_ttt (O)
+2025-09-01 17:59:24.387 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 17:59:24.387 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 17:59:24.388 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 17:59:24.388 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 17:59:24.388 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 17:59:24.389 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 17:59:24.392 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 17:59:24.396 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 17:59:24.396 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=win, stats={'wins': 11, 'losses': 11, 'draws': 7, 'games': 29}
+2025-09-01 17:59:24.397 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 17:59:24.397 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 11, 'losses': 12, 'draws': 7, 'games': 30}
+2025-09-01 17:59:24.398 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_175924_397898.json
+2025-09-01 17:59:24.398 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=random_ttt vs random_ttt → winner=X
+2025-09-01 17:59:24.398 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_175924_397898.json
+2025-09-01 18:02:55.967 | INFO     | arena.logging_config:<module>:33 - Logger initialized
+2025-09-01 18:02:55.967 | INFO     | __main__:main:5 - Starting Arena with loguru logging
+2025-09-01 18:02:59.609 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:02:59.780 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:02:59.781 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:02:59.781 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:02:59.781 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:02:59.781 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:02:59.782 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:02:59.782 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:02:59.782 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:02:59.785 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:02:59.785 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:02:59.785 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:02:59.786 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:02:59.786 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:02:59.786 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:02:59.786 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:02:59.788 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:02:59.789 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:03:01.461 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | random_ttt (X) vs random_ttt (O)
+2025-09-01 18:03:01.462 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:03:01.462 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:03:01.463 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:03:01.463 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:03:01.464 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:03:01.464 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:03:01.467 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 18:03:01.467 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:01.467 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=win, stats={'wins': 12, 'losses': 12, 'draws': 7, 'games': 31}
+2025-09-01 18:03:01.471 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:01.471 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 12, 'losses': 13, 'draws': 7, 'games': 32}
+2025-09-01 18:03:01.471 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180301_471680.json
+2025-09-01 18:03:01.472 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=random_ttt vs random_ttt → winner=X
+2025-09-01 18:03:01.472 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180301_471680.json
+2025-09-01 18:03:20.390 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | perfect_bot (X) vs random_ttt (O)
+2025-09-01 18:03:20.390 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:03:20.390 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:03:20.391 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:03:20.391 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:03:20.391 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:03:20.391 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:03:21.012 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 18:03:21.073 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:21.079 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=perfect_bot, result=win, stats={'wins': 6, 'losses': 0, 'draws': 6, 'games': 12}
+2025-09-01 18:03:21.163 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:21.173 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 12, 'losses': 14, 'draws': 7, 'games': 33}
+2025-09-01 18:03:21.216 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180321_200770.json
+2025-09-01 18:03:21.233 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=perfect_bot vs random_ttt → winner=X
+2025-09-01 18:03:21.238 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180321_200770.json
+2025-09-01 18:03:32.283 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:03:32.283 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:03:32.284 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:03:32.284 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:03:32.284 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:03:32.284 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:03:32.284 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:03:32.289 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:03:32.289 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:03:33.338 | INFO     | arena.api_server:play:87 - New match: eleven_sticks | random_stick (X) vs random_stick (O)
+2025-09-01 18:03:33.338 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:03:33.338 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:03:33.339 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:03:33.339 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:03:33.339 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:03:33.339 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:03:33.342 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=O
+2025-09-01 18:03:33.342 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:33.342 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=eleven_sticks, bot=random_stick, result=win, stats={'wins': 8, 'losses': 7, 'draws': 0, 'games': 15}
+2025-09-01 18:03:33.346 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:33.346 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=eleven_sticks, bot=random_stick, result=loss, stats={'wins': 8, 'losses': 8, 'draws': 0, 'games': 16}
+2025-09-01 18:03:33.346 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/eleven_sticks_20250901_180333_346787.json
+2025-09-01 18:03:33.347 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=eleven_sticks, bots=random_stick vs random_stick → winner=O
+2025-09-01 18:03:33.347 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/eleven_sticks_20250901_180333_346787.json
+2025-09-01 18:03:38.357 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:03:38.357 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:03:44.143 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:03:44.143 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:03:44.143 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:03:44.143 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:03:44.144 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:03:44.144 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:03:44.144 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:03:44.147 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:03:44.147 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:03:46.934 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | random_ttt (X) vs random_ttt (O)
+2025-09-01 18:03:46.934 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:03:46.934 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:03:46.935 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:03:46.935 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:03:46.935 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:03:46.936 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:03:46.938 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=draw
+2025-09-01 18:03:46.939 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:46.939 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=draw, stats={'wins': 12, 'losses': 14, 'draws': 8, 'games': 34}
+2025-09-01 18:03:46.940 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:03:46.940 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=draw, stats={'wins': 12, 'losses': 14, 'draws': 9, 'games': 35}
+2025-09-01 18:03:46.940 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180346_940702.json
+2025-09-01 18:03:46.940 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=random_ttt vs random_ttt → winner=draw
+2025-09-01 18:03:46.941 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180346_940702.json
+2025-09-01 18:04:02.117 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:04:02.118 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:04:20.824 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | corner_bot (X) vs random_ttt (O)
+2025-09-01 18:04:20.824 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:04:20.824 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:04:20.824 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:04:20.824 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:04:20.825 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:04:20.825 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:04:20.827 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=draw
+2025-09-01 18:04:20.827 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:04:20.827 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=corner_bot, result=draw, stats={'wins': 1, 'losses': 4, 'draws': 1, 'games': 6}
+2025-09-01 18:04:20.831 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:04:20.831 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=draw, stats={'wins': 12, 'losses': 14, 'draws': 10, 'games': 36}
+2025-09-01 18:04:20.831 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180420_831765.json
+2025-09-01 18:04:20.832 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=corner_bot vs random_ttt → winner=draw
+2025-09-01 18:04:20.832 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180420_831765.json
+2025-09-01 18:04:29.936 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:04:29.937 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:04:34.806 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | corner_bot (X) vs corner_bot (O)
+2025-09-01 18:04:34.807 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:04:34.807 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:04:34.807 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:04:34.807 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:04:34.807 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:04:34.807 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:04:34.810 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=draw
+2025-09-01 18:04:34.811 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:04:34.811 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=corner_bot, result=draw, stats={'wins': 1, 'losses': 4, 'draws': 2, 'games': 7}
+2025-09-01 18:04:34.814 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:04:34.814 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=corner_bot, result=draw, stats={'wins': 1, 'losses': 4, 'draws': 3, 'games': 8}
+2025-09-01 18:04:34.815 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180434_815152.json
+2025-09-01 18:04:34.815 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=corner_bot vs corner_bot → winner=draw
+2025-09-01 18:04:34.815 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180434_815152.json
+2025-09-01 18:04:44.135 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:04:44.135 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:04:44.672 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | corner_bot (X) vs perfect_bot (O)
+2025-09-01 18:04:44.673 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:04:44.673 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:04:44.674 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:04:44.674 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:04:44.674 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:04:44.674 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:04:44.776 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=O
+2025-09-01 18:04:44.777 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:04:44.777 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=perfect_bot, result=win, stats={'wins': 7, 'losses': 0, 'draws': 6, 'games': 13}
+2025-09-01 18:04:44.781 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:04:44.781 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=corner_bot, result=loss, stats={'wins': 1, 'losses': 5, 'draws': 3, 'games': 9}
+2025-09-01 18:04:44.781 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180444_781606.json
+2025-09-01 18:04:44.781 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=corner_bot vs perfect_bot → winner=O
+2025-09-01 18:04:44.782 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180444_781606.json
+2025-09-01 18:05:56.837 | INFO     | arena.logging_config:<module>:33 - Logger initialized
+2025-09-01 18:05:56.837 | INFO     | __main__:main:5 - Starting Arena with loguru logging
+2025-09-01 18:06:02.996 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:06:03.022 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:06:03.022 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:06:03.023 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:06:03.023 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:06:03.023 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:06:03.023 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:06:03.024 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:06:03.024 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:06:03.027 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:06:03.027 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:06:03.027 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:06:03.027 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:06:03.028 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:06:03.028 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:06:03.028 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:06:03.030 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:06:03.030 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:06:06.424 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | random_ttt (X) vs perfect_bot (O)
+2025-09-01 18:06:06.425 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:06:06.425 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:06:06.425 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:06:06.426 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:06:06.426 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:06:06.427 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:06:06.538 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=O
+2025-09-01 18:06:06.538 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:06:06.539 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=perfect_bot, result=win, stats={'wins': 8, 'losses': 0, 'draws': 6, 'games': 14}
+2025-09-01 18:06:06.542 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:06:06.542 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 12, 'losses': 15, 'draws': 10, 'games': 37}
+2025-09-01 18:06:06.542 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180606_542666.json
+2025-09-01 18:06:06.543 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=random_ttt vs perfect_bot → winner=O
+2025-09-01 18:06:06.543 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180606_542666.json
+2025-09-01 18:07:08.096 | INFO     | arena.logging_config:<module>:33 - Logger initialized
+2025-09-01 18:07:08.096 | INFO     | __main__:main:5 - Starting Arena with loguru logging
+2025-09-01 18:07:11.473 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:07:11.577 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:07:11.577 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:07:11.577 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:07:11.578 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:07:11.578 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:07:11.578 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:07:11.578 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:07:11.579 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:07:11.581 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:07:11.581 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:07:11.582 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:07:11.582 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:07:11.582 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:07:11.582 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:07:11.582 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:07:11.584 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:07:11.585 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:07:14.338 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | perfect_bot (X) vs random_ttt (O)
+2025-09-01 18:07:14.338 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:07:14.338 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:07:14.339 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:07:14.339 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:07:14.339 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:07:14.339 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:07:14.966 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 18:07:15.034 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:07:15.034 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=perfect_bot, result=win, stats={'wins': 9, 'losses': 0, 'draws': 6, 'games': 15}
+2025-09-01 18:07:15.102 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:07:15.108 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 12, 'losses': 16, 'draws': 10, 'games': 38}
+2025-09-01 18:07:15.156 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180715_135076.json
+2025-09-01 18:07:15.172 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=perfect_bot vs random_ttt → winner=X
+2025-09-01 18:07:15.172 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180715_135076.json
+2025-09-01 18:07:22.222 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:07:22.223 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:08:25.969 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:08:26.061 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:08:26.061 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:08:26.061 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:08:26.062 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:08:26.062 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:08:26.062 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:08:26.062 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:08:26.062 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:08:26.067 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:08:26.067 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:08:26.068 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:08:26.068 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:08:26.068 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:08:26.068 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:08:26.068 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:08:26.071 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:08:26.071 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:08:28.230 | INFO     | arena.api_server:play:87 - New match: tic_tac_toe | perfect_bot (X) vs random_ttt (O)
+2025-09-01 18:08:28.230 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:08:28.230 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:08:28.231 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:08:28.231 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:08:28.232 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:08:28.232 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:08:28.817 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 18:08:28.859 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:08:28.869 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=perfect_bot, result=win, stats={'wins': 10, 'losses': 0, 'draws': 6, 'games': 16}
+2025-09-01 18:08:28.921 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:08:28.932 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=tic_tac_toe, bot=random_ttt, result=loss, stats={'wins': 12, 'losses': 17, 'draws': 10, 'games': 39}
+2025-09-01 18:08:28.979 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/tic_tac_toe_20250901_180828_958745.json
+2025-09-01 18:08:28.989 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=tic_tac_toe, bots=perfect_bot vs random_ttt → winner=X
+2025-09-01 18:08:28.995 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/tic_tac_toe_20250901_180828_958745.json
+2025-09-01 18:08:34.012 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:08:34.012 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:08:41.633 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:08:41.633 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:08:41.634 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:08:41.634 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:08:41.634 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:08:41.635 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:08:41.635 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:08:41.644 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:08:41.644 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:09:33.351 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:09:33.449 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:09:33.449 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:09:33.450 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:09:33.450 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:09:33.450 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:09:33.450 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:09:33.451 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:09:33.451 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:09:33.454 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:09:33.454 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:09:33.454 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:09:33.455 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:09:33.455 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:09:33.455 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:09:33.455 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:09:33.457 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:09:33.457 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:09:34.935 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:09:34.935 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:09:34.935 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:09:34.936 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:09:34.936 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:09:34.936 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:09:34.936 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:09:34.944 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:09:34.945 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:09:36.859 | INFO     | arena.api_server:play:87 - New match: eleven_sticks | greedy_stick_bot (X) vs random_stick (O)
+2025-09-01 18:09:36.859 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:09:36.860 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:09:36.860 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:09:36.860 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:09:36.860 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:09:36.861 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:09:36.863 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 18:09:36.864 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:09:36.864 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=eleven_sticks, bot=greedy_stick_bot, result=win, stats={'wins': 2, 'losses': 3, 'draws': 0, 'games': 5}
+2025-09-01 18:09:36.867 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:09:36.867 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=eleven_sticks, bot=random_stick, result=loss, stats={'wins': 8, 'losses': 9, 'draws': 0, 'games': 17}
+2025-09-01 18:09:36.868 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/eleven_sticks_20250901_180936_868307.json
+2025-09-01 18:09:36.868 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=eleven_sticks, bots=greedy_stick_bot vs random_stick → winner=X
+2025-09-01 18:09:36.868 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/eleven_sticks_20250901_180936_868307.json
+2025-09-01 18:09:40.910 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:09:40.910 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:09:56.715 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:09:56.745 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:09:56.745 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:09:56.746 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:09:56.746 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:09:56.747 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:09:56.747 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:09:56.747 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:09:56.747 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:09:56.750 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:09:56.750 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:09:56.750 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:09:56.751 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:09:56.751 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:09:56.751 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:09:56.751 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:09:56.756 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:09:56.756 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
+2025-09-01 18:09:59.264 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:09:59.264 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:09:59.265 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:09:59.265 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:09:59.265 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:09:59.265 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:09:59.266 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:09:59.274 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:09:59.274 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:10:02.978 | INFO     | arena.api_server:play:87 - New match: eleven_sticks | perfect_stick_bot (X) vs random_stick (O)
+2025-09-01 18:10:02.979 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:10:02.979 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:10:02.979 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=eleven_sticks
+2025-09-01 18:10:02.979 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_stick (Random Stick 🤪)
+2025-09-01 18:10:02.979 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: greedy_stick_bot (Greedy Stick 😈)
+2025-09-01 18:10:02.980 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_stick_bot (Perfect Stick 🧠)
+2025-09-01 18:10:02.981 | SUCCESS  | arena.api_server:play:108 - Match finished: Winner=X
+2025-09-01 18:10:02.982 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:10:02.982 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=eleven_sticks, bot=perfect_stick_bot, result=win, stats={'wins': 3, 'losses': 0, 'draws': 0, 'games': 3}
+2025-09-01 18:10:02.982 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/leaderboard.json
+2025-09-01 18:10:02.983 | SUCCESS  | arena.filestorage:update_leaderboard:122 - Updated leaderboard: game=eleven_sticks, bot=random_stick, result=loss, stats={'wins': 8, 'losses': 10, 'draws': 0, 'games': 18}
+2025-09-01 18:10:02.983 | SUCCESS  | arena.filestorage:write_json:41 - Saved JSON → /root/ludus/arena_data/matches/eleven_sticks_20250901_181002_983441.json
+2025-09-01 18:10:02.983 | INFO     | arena.filestorage:save_match_log:133 - Saved match log: game=eleven_sticks, bots=perfect_stick_bot vs random_stick → winner=X
+2025-09-01 18:10:02.983 | DEBUG    | arena.api_server:play:131 - Match log saved to /root/ludus/arena_data/matches/eleven_sticks_20250901_181002_983441.json
+2025-09-01 18:10:09.020 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for eleven_sticks
+2025-09-01 18:10:09.020 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=eleven_sticks
+2025-09-01 18:10:13.868 | DEBUG    | arena.api_server:root:56 - Serving index.html
+2025-09-01 18:10:13.897 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: tic_tac_toe.json
+2025-09-01 18:10:13.898 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/tic_tac_toe.json
+2025-09-01 18:10:13.898 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: tic_tac_toe (tic_tac_toe.json)
+2025-09-01 18:10:13.898 | DEBUG    | arena.filestorage:list_games:48 - Found file in games dir: eleven_sticks.json
+2025-09-01 18:10:13.898 | DEBUG    | arena.filestorage:list_games:57 - Trying to load game JSON: /root/ludus/arena_data/games/eleven_sticks.json
+2025-09-01 18:10:13.899 | SUCCESS  | arena.filestorage:list_games:60 - Loaded game OK: eleven_sticks (eleven_sticks.json)
+2025-09-01 18:10:13.899 | INFO     | arena.filestorage:list_games:65 - Total games loaded: 2
+2025-09-01 18:10:13.899 | INFO     | arena.api_server:games:63 - Loaded 2 games
+2025-09-01 18:10:13.901 | DEBUG    | arena.filestorage:list_bots:70 - Looking for bots metadata at /root/ludus/arena_data/bots/metadata.json
+2025-09-01 18:10:13.901 | DEBUG    | arena.filestorage:list_bots:80 - Trying to load metadata.json
+2025-09-01 18:10:13.902 | INFO     | arena.filestorage:list_bots:87 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:10:13.902 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: random_ttt (Random Bot 🤖)
+2025-09-01 18:10:13.902 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: corner_bot (Corner Lover 😎)
+2025-09-01 18:10:13.902 | DEBUG    | arena.filestorage:list_bots:89 -  → Bot loaded: perfect_bot (Perfect Bot 🧠)
+2025-09-01 18:10:13.902 | INFO     | arena.api_server:bots:70 - Listed 3 bots for game=tic_tac_toe
+2025-09-01 18:10:13.910 | DEBUG    | arena.filestorage:get_leaderboard:96 - Fetched leaderboard for tic_tac_toe
+2025-09-01 18:10:13.910 | INFO     | arena.api_server:leaderboard:77 - Leaderboard request for game=tic_tac_toe
