@@ -1,0 +1,32 @@
+{
+  "game": "eleven_sticks",
+  "bot0": "greedy_stick_bot",
+  "bot1": "perfect_stick_bot",
+  "winner": "O",
+  "moves": [
+    {
+      "player": "X",
+      "move": 3
+    },
+    {
+      "player": "O",
+      "move": 1
+    },
+    {
+      "player": "X",
+      "move": 3
+    },
+    {
+      "player": "O",
+      "move": 1
+    },
+    {
+      "player": "X",
+      "move": 3
+    }
+  ],
+  "final_board": [
+    0
+  ],
+  "winning_line": []
+}

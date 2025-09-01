@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arena — Bot Battles</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <link id="game-style" rel="stylesheet" href="" />
+  <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1 data-i18n="title">✨ Arena — Educational Bot Battles</h1>
+      <p class="subtitle" data-i18n="subtitle">
+        Pick a game, choose two bots, and watch them duel on a soft pastel board 💫
+      </p>
+    </header>
+
+    <section class="controls glass">
+      <div class="control-group">
+        <label for="gameSelect" data-i18n="games">Game</label>
+        <select id="gameSelect"></select>
+      </div>
+      <div class="control-row">
+        <div class="control-group">
+          <label for="bot0Select">Bot X (first)</label>
+          <select id="bot0Select"></select>
+        </div>
+        <div class="control-group">
+          <label for="bot1Select">Bot O (second)</label>
+          <select id="bot1Select"></select>
+        </div>
+      </div>
+      <button id="playBtn" class="primary" data-i18n="play">▶️ Play Match</button>
+
+      <!-- Language switcher -->
+      <div class="control-group" style="margin-top:12px;">
+        <label for="langSelect">🌐 Language</label>
+        <select id="langSelect">
+          <option value="en">English</option>
+          <option value="pt">Português</option>
+        </select>
+      </div>
+    </section>
+
+    <section class="board glass">
+      <div id="board" class="grid"></div>
+      <div id="status" class="status"></div>
+    </section>
+
+    <section class="leaderboard glass">
+      <h2 data-i18n="leaderboard">🏆 Leaderboard</h2>
+      <table id="leaderboardTable">
+        <thead>
+          <tr>
+            <th data-i18n="bot">Bot</th>
+            <th data-i18n="games">Games</th>
+            <th data-i18n="wins">W</th>
+            <th data-i18n="draws">D</th>
+            <th data-i18n="losses">L</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="backup glass">
+      <button id="backupBtn" class="secondary">💾 Backup Arena Data</button>
+    </section>
+
+    <footer>
+      <p>
+        Open-source edu project • Add your own bots in
+        <code>arena_data/bots</code> •
+        <span class="tag">Gen-Z vibes</span> 🫶
+      </p>
+    </footer>
+  </div>
+
+  <!-- i18next library -->
+  <script src="https://unpkg.com/i18next@23.10.1/dist/umd/i18next.min.js"></script>
+  <!-- your app (as module!) -->
+  <script type="module" src="/static/app.js"></script>
+</body>
+</html>

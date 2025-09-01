@@ -1,0 +1,129 @@
+/* ==== Global CSS (shared across all games) ==== */
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans";
+  background: linear-gradient(135deg, #ffe6f0, #e6f7ff, #e8ffe6);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+}
+
+.container {
+  width: min(1000px, 92vw);
+  margin: 36px auto;
+}
+
+header { text-align: center; margin-bottom: 18px; }
+h1 { margin: 0; letter-spacing: 0.5px; font-weight: 800; }
+.subtitle { margin: 6px 0 0 0; opacity: 0.8; }
+
+.glass {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  padding: 16px;
+  backdrop-filter: blur(10px);
+  margin-bottom: 16px;
+  transition: box-shadow 0.3s;
+}
+.glass:hover {
+  box-shadow: 0 12px 36px rgba(0,0,0,0.12);
+}
+
+.controls .control-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.controls .control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.controls label {
+  font-size: 14px;
+  opacity: 0.8;
+}
+select, button {
+  padding: 12px 14px;
+  border-radius: 14px;
+  border: 1px solid #e6e6e6;
+  outline: none;
+  background: white;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+select:focus {
+  border-color: #66ccff;
+  box-shadow: 0 0 0 2px rgba(102,204,255,0.2);
+}
+button.primary {
+  margin-top: 10px;
+  background: linear-gradient(135deg, #111, #333);
+  color: #fff;
+  cursor: pointer;
+  transition: transform .1s ease, box-shadow .2s ease;
+}
+button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.15);
+}
+button.secondary {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+button.secondary:hover {
+  background: #f1f1f1;
+}
+
+.board { display: grid; place-items: center; }
+
+.status {
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.leaderboard table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.leaderboard th, .leaderboard td {
+  text-align: left;
+  padding: 10px 8px;
+  border-bottom: 1px dashed #eaeaea;
+}
+
+footer { text-align: center; margin-top: 10px; opacity: 0.7; }
+.tag {
+  display: inline-block;
+  padding: 2px 8px;
+  background: #fff;
+  border-radius: 999px;
+  border: 1px solid #eee;
+}
+
+@keyframes flashWinner {
+  0% { color: #111; }
+  25% { color: #ff4da6; }
+  50% { color: #111; }
+  75% { color: #66ccff; }
+  100% { color: #111; }
+}
+.status.winnerFlash {
+  animation: flashWinner 1s ease-in-out 4;
+  font-size: 1.3em;
+  text-align: center;
+}
+.status .desc {
+  font-size: 0.9em;
+  opacity: 0.8;
+  margin-top: 6px;
+  font-style: italic;
+}

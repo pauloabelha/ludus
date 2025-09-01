@@ -1,0 +1,52 @@
+{
+  "game": "tic_tac_toe",
+  "bot0": "random_bot",
+  "bot1": "random_bot",
+  "winner": "X",
+  "moves": [
+    {
+      "player": "X",
+      "move": 1
+    },
+    {
+      "player": "O",
+      "move": 4
+    },
+    {
+      "player": "X",
+      "move": 8
+    },
+    {
+      "player": "O",
+      "move": 6
+    },
+    {
+      "player": "X",
+      "move": 0
+    },
+    {
+      "player": "O",
+      "move": 7
+    },
+    {
+      "player": "X",
+      "move": 2
+    }
+  ],
+  "final_board": [
+    "X",
+    "X",
+    "X",
+    "",
+    "O",
+    "",
+    "O",
+    "O",
+    "X"
+  ],
+  "winning_line": [
+    0,
+    1,
+    2
+  ]
+}

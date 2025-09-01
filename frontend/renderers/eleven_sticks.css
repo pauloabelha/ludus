@@ -1,0 +1,16 @@
+/* ==== Eleven Sticks specific ==== */
+.sticks {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.stick {
+  font-size: 3rem;   /* Big horizontal stick */
+  line-height: 1;
+  cursor: default;
+  transition: transform 0.3s, opacity 0.3s;
+}
+.stick.removed-x { color: #d62828; opacity: 0.8; transform: scale(0.9); }
+.stick.removed-o { color: #005fbb; opacity: 0.8; transform: scale(0.9); }

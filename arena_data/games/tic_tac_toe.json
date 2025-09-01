@@ -1,0 +1,19 @@
+{
+  "code": "tic_tac_toe",
+  "name": "Tic-Tac-Toe",
+  "description": "Classic 3x3 Tic-Tac-Toe. Two bots: X (first) and O (second).",
+  "players": 2,
+  "board": {
+    "rows": 3,
+    "cols": 3,
+    "symbols": [
+      "X",
+      "O"
+    ]
+  },
+  "rules": [
+    "X plays first.",
+    "Players alternate marking empty cells.",
+    "Three in a row wins; otherwise draw after 9 moves."
+  ]
+}

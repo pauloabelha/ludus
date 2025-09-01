@@ -1,0 +1,44 @@
+[
+  {
+    "id": "random_ttt",
+    "name": "Random Bot 🤖",
+    "file": "random_bot.py",
+    "game": "tic_tac_toe",
+    "description": "Picks a random legal move."
+  },
+  {
+    "id": "corner_bot",
+    "name": "Corner Lover 😎",
+    "file": "corner_bot.py",
+    "game": "tic_tac_toe",
+    "description": "Prefers corners, then center, else random."
+  },
+  {
+    "id": "perfect_bot",
+    "name": "Perfect Bot 🧠",
+    "file": "ttt_perfect_bot.py",
+    "game": "tic_tac_toe",
+    "description": "Plays perfectly using minimax (never loses)."
+  },
+  {
+    "id": "random_stick",
+    "name": "Random Stick 🤪",
+    "file": "random_bot.py",
+    "game": "eleven_sticks",
+    "description": "Remove palitos de forma aleatória."
+  },
+  {
+    "id": "greedy_stick_bot",
+    "name": "Greedy Stick 😈",
+    "file": "es_greedy.py",
+    "game": "eleven_sticks",
+    "description": "Sempre pega o máximo possível."
+  },
+  {
+    "id": "perfect_stick_bot",
+    "name": "Perfect Stick 🧠",
+    "file": "es_perfect.py",
+    "game": "eleven_sticks",
+    "description": "Joga de forma ótima, nunca perde se começar certo."
+  }
+]

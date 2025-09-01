@@ -1,0 +1,14 @@
+{
+  "title": "✨ Arena — Batalhas Educacionais de Bots",
+  "subtitle": "Escolha um jogo, dois bots e veja-os duelar em um tabuleiro pastel 💫",
+  "play": "▶️ Jogar Partida",
+  "playing": "Jogando… ✨",
+  "draw": "Deu empate 😶",
+  "winner": "{{name}} ({{piece}}) venceu! 🎉\nEstratégia: {{desc}}",
+  "leaderboard": "🏆 Classificação",
+  "bot": "Bot",
+  "games": "Jogos",
+  "wins": "V",
+  "draws": "E",
+  "losses": "D"
+}

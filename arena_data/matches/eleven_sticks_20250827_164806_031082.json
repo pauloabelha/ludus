@@ -1,0 +1,36 @@
+{
+  "game": "eleven_sticks",
+  "bot0": "random_stick",
+  "bot1": "random_stick",
+  "winner": "X",
+  "moves": [
+    {
+      "player": "X",
+      "move": 2
+    },
+    {
+      "player": "O",
+      "move": 2
+    },
+    {
+      "player": "X",
+      "move": 1
+    },
+    {
+      "player": "O",
+      "move": 2
+    },
+    {
+      "player": "X",
+      "move": 1
+    },
+    {
+      "player": "O",
+      "move": 3
+    }
+  ],
+  "final_board": [
+    0
+  ],
+  "winning_line": []
+}

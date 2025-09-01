@@ -1,0 +1,48 @@
+{
+  "tic_tac_toe": {
+    "random_bot": {
+      "wins": 17,
+      "losses": 18,
+      "draws": 1,
+      "games": 36
+    },
+    "corner_bot": {
+      "wins": 1,
+      "losses": 4,
+      "draws": 0,
+      "games": 5
+    },
+    "perfect_bot": {
+      "wins": 5,
+      "losses": 0,
+      "draws": 6,
+      "games": 11
+    },
+    "random_ttt": {
+      "wins": 9,
+      "losses": 10,
+      "draws": 7,
+      "games": 26
+    }
+  },
+  "eleven_sticks": {
+    "random_stick": {
+      "wins": 7,
+      "losses": 7,
+      "draws": 0,
+      "games": 14
+    },
+    "greedy_stick_bot": {
+      "wins": 1,
+      "losses": 3,
+      "draws": 0,
+      "games": 4
+    },
+    "perfect_stick_bot": {
+      "wins": 2,
+      "losses": 0,
+      "draws": 0,
+      "games": 2
+    }
+  }
+}
